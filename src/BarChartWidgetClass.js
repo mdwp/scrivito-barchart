@@ -7,7 +7,7 @@ const BarChartWidget = Scrivito.provideWidgetClass('BarChartWidget', {
         label2: 'string',
         label3: 'string',
         type: ['enum', {
-            values: ['stacked',
+            values: [
                 'simple',
                 'stacked',
                 'mixed',
