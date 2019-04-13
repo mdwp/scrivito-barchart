@@ -16,16 +16,13 @@ Scrivito.provideComponent("BarChartWidget", ({ widget }) => {
     return obj;
   });
 
-
-
-
-  /*if (!items.length) {
+  if (!items.length && Scrivito.isInPlaceEditingActive()) {
     return (
-      <InPlaceEditingPlaceholder center={ true }>
-        Set bar chart values in the widget properties.
-      </InPlaceEditingPlaceholder>
+        <h4 className="text-center">
+          Provide the barchart values in the widget properties..
+        </h4>
     );
-  }*/
+  }
 
   return (
     type === 'stacked' ?
